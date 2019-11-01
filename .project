@@ -3,6 +3,9 @@
 	<name>327_proj3_stringparser</name>
 	<comment></comment>
 	<projects>
+		<project>327_proj3_fileIO</project>
+		<project>327_proj3_stringparser</project>
+		<project>327_proj3_test</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
