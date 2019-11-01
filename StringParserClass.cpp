@@ -48,13 +48,13 @@ int StringParserClass::setTags(const char *pStart, const char *pEnd){
 	//deep copy for pStartTag
 	int slength = strlen(pStart);
 	pStartTag = new char[slength+1];
+	strncpy(pStartTag, pStart, slength);
 
 	//deep copy for pEndTag
 	int elength = strlen(pEnd);
 	pEndTag = new char[elength+1];
-
-	strncpy(pStartTag, pStart, slength);
 	strncpy(pEndTag, pEnd, elength);
+
 
 	int deleteMe = strlen(pStartTag);
 	int deleteMe2 = strlen(pEndTag);
